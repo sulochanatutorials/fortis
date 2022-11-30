@@ -1,0 +1,61 @@
+
+# V1 Tokens Ach Request 1
+
+## Structure
+
+`V1TokensAchRequest1`
+
+## Fields
+
+| Name | Type | Tags | Description | Getter | Setter |
+|  --- | --- | --- | --- | --- | --- |
+| `accountHolderName` | `?string` | Optional | Account holder name<br>**Constraints**: *Minimum Length*: `1`, *Maximum Length*: `32` | getAccountHolderName(): ?string | setAccountHolderName(?string accountHolderName): void |
+| `accountNumber` | `?string` | Optional | Account number<br>**Constraints**: *Minimum Length*: `4`, *Maximum Length*: `19` | getAccountNumber(): ?string | setAccountNumber(?string accountNumber): void |
+| `accountVaultApiId` | `?string` | Optional | This field can be used to correlate Tokens in our system to data within an outside software integration<br>**Constraints**: *Minimum Length*: `1`, *Maximum Length*: `36` | getAccountVaultApiId(): ?string | setAccountVaultApiId(?string accountVaultApiId): void |
+| `accountvaultC1` | `?string` | Optional | Custom field 1 for API users to store custom data<br>**Constraints**: *Minimum Length*: `1`, *Maximum Length*: `128` | getAccountvaultC1(): ?string | setAccountvaultC1(?string accountvaultC1): void |
+| `accountvaultC2` | `?string` | Optional | Custom field 2 for API users to store custom data<br>**Constraints**: *Minimum Length*: `1`, *Maximum Length*: `128` | getAccountvaultC2(): ?string | setAccountvaultC2(?string accountvaultC2): void |
+| `accountvaultC3` | `?string` | Optional | Custom field 3 for API users to store custom data<br>**Constraints**: *Minimum Length*: `1`, *Maximum Length*: `128` | getAccountvaultC3(): ?string | setAccountvaultC3(?string accountvaultC3): void |
+| `achSecCode` | [`?string (AchSecCode3Enum)`](../../doc/models/ach-sec-code-3-enum.md) | Optional | SEC code for the account | getAchSecCode(): ?string | setAchSecCode(?string achSecCode): void |
+| `billingAddress` | [`?BillingAddress`](../../doc/models/billing-address.md) | Optional | Billing Address Object | getBillingAddress(): ?BillingAddress | setBillingAddress(?BillingAddress billingAddress): void |
+| `contactId` | `?string` | Optional | Used to associate the Token with a Contact.<br>**Constraints**: *Pattern*: `^(([0-9a-fA-F]{24})\|(([0-9a-fA-F]{8})-(([0-9a-fA-F]{4}\-){3})([0-9a-fA-F]{12})))$` | getContactId(): ?string | setContactId(?string contactId): void |
+| `customerId` | `?string` | Optional | Used to store a customer identification number.<br>**Constraints**: *Minimum Length*: `1`, *Maximum Length*: `50` | getCustomerId(): ?string | setCustomerId(?string customerId): void |
+| `identityVerification` | [`?IdentityVerification2`](../../doc/models/identity-verification-2.md) | Optional | Identity verification | getIdentityVerification(): ?IdentityVerification2 | setIdentityVerification(?IdentityVerification2 identityVerification): void |
+| `locationId` | `?string` | Optional | A valid Location Id associated with the Contact for this Token<br>**Constraints**: *Pattern*: `^(([0-9a-fA-F]{24})\|(([0-9a-fA-F]{8})-(([0-9a-fA-F]{4}\-){3})([0-9a-fA-F]{12})))$` | getLocationId(): ?string | setLocationId(?string locationId): void |
+| `previousAccountVaultApiId` | `?string` | Optional | Can be used to pull payment info from a previous token api id.<br>**Constraints**: *Maximum Length*: `64` | getPreviousAccountVaultApiId(): ?string | setPreviousAccountVaultApiId(?string previousAccountVaultApiId): void |
+| `previousAccountVaultId` | `?string` | Optional | Can be used to pull payment info from a previous token.<br>**Constraints**: *Pattern*: `^(([0-9a-fA-F]{24})\|(([0-9a-fA-F]{8})-(([0-9a-fA-F]{4}\-){3})([0-9a-fA-F]{12})))$` | getPreviousAccountVaultId(): ?string | setPreviousAccountVaultId(?string previousAccountVaultId): void |
+| `previousTransactionId` | `?string` | Optional | Can be used to pull payment info from a previous transaction.<br>**Constraints**: *Pattern*: `^(([0-9a-fA-F]{24})\|(([0-9a-fA-F]{8})-(([0-9a-fA-F]{4}\-){3})([0-9a-fA-F]{12})))$` | getPreviousTransactionId(): ?string | setPreviousTransactionId(?string previousTransactionId): void |
+| `termsAgree` | `?bool` | Optional | Terms agreement. | getTermsAgree(): ?bool | setTermsAgree(?bool termsAgree): void |
+| `termsAgreeIp` | `?string` | Optional | The ip address of the client that agreed to terms. | getTermsAgreeIp(): ?string | setTermsAgreeIp(?string termsAgreeIp): void |
+| `title` | `?string` | Optional | Used to describe the Token for easier identification within our UI.<br>**Constraints**: *Minimum Length*: `1`, *Maximum Length*: `16` | getTitle(): ?string | setTitle(?string title): void |
+| `accountType` | [`?string (AccountType6Enum)`](../../doc/models/account-type-6-enum.md) | Optional | Account type | getAccountType(): ?string | setAccountType(?string accountType): void |
+| `isCompany` | `?bool` | Optional | This identifies whether the ACH account belongs to a company or individual. This can affect which SEC code is used when attempting to run a transaction.<br>**Default**: `false` | getIsCompany(): ?bool | setIsCompany(?bool isCompany): void |
+| `routingNumber` | `?string` | Optional | Required for ACH. The Routing Number for the bank account being used. | getRoutingNumber(): ?string | setRoutingNumber(?string routingNumber): void |
+
+## Example (as JSON)
+
+```json
+{
+  "account_holder_name": null,
+  "account_number": null,
+  "account_vault_api_id": null,
+  "accountvault_c1": null,
+  "accountvault_c2": null,
+  "accountvault_c3": null,
+  "ach_sec_code": null,
+  "billing_address": null,
+  "contact_id": null,
+  "customer_id": null,
+  "identity_verification": null,
+  "location_id": null,
+  "previous_account_vault_api_id": null,
+  "previous_account_vault_id": null,
+  "previous_transaction_id": null,
+  "terms_agree": null,
+  "terms_agree_ip": null,
+  "title": null,
+  "account_type": null,
+  "is_company": null,
+  "routing_number": null
+}
+```
+

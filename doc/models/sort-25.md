@@ -1,0 +1,115 @@
+
+# Sort 25
+
+You can use any `field_name` from this endpoint results, and you can combine more than one field for more complex sorting. You can use one of the following methods:
+
+> /endpoint?sort={ "field_name": "asc", "field_name2": "desc" }
+> 
+> /endpoint?sort[field_name]=asc&sort[field_name2]=desc
+
+## Structure
+
+`Sort25`
+
+## Fields
+
+| Name | Type | Tags | Description | Getter | Setter |
+|  --- | --- | --- | --- | --- | --- |
+| `accountHolderName` | `?array` | Optional | - | getAccountHolderName(): ?array | setAccountHolderName(?array accountHolderName): void |
+| `accountNumber` | `?array` | Optional | - | getAccountNumber(): ?array | setAccountNumber(?array accountNumber): void |
+| `accountVaultApiId` | `?array` | Optional | - | getAccountVaultApiId(): ?array | setAccountVaultApiId(?array accountVaultApiId): void |
+| `accountvaultC1` | `?array` | Optional | - | getAccountvaultC1(): ?array | setAccountvaultC1(?array accountvaultC1): void |
+| `accountvaultC2` | `?array` | Optional | - | getAccountvaultC2(): ?array | setAccountvaultC2(?array accountvaultC2): void |
+| `accountvaultC3` | `?array` | Optional | - | getAccountvaultC3(): ?array | setAccountvaultC3(?array accountvaultC3): void |
+| `achSecCode` | `?array` | Optional | - | getAchSecCode(): ?array | setAchSecCode(?array achSecCode): void |
+| `billingAddress` | `?array` | Optional | - | getBillingAddress(): ?array | setBillingAddress(?array billingAddress): void |
+| `contactId` | `?array` | Optional | - | getContactId(): ?array | setContactId(?array contactId): void |
+| `customerId` | `?array` | Optional | - | getCustomerId(): ?array | setCustomerId(?array customerId): void |
+| `identityVerification` | `?array` | Optional | - | getIdentityVerification(): ?array | setIdentityVerification(?array identityVerification): void |
+| `locationId` | `?array` | Optional | - | getLocationId(): ?array | setLocationId(?array locationId): void |
+| `previousAccountVaultApiId` | `?array` | Optional | - | getPreviousAccountVaultApiId(): ?array | setPreviousAccountVaultApiId(?array previousAccountVaultApiId): void |
+| `previousAccountVaultId` | `?array` | Optional | - | getPreviousAccountVaultId(): ?array | setPreviousAccountVaultId(?array previousAccountVaultId): void |
+| `previousTransactionId` | `?array` | Optional | - | getPreviousTransactionId(): ?array | setPreviousTransactionId(?array previousTransactionId): void |
+| `termsAgree` | `?array` | Optional | - | getTermsAgree(): ?array | setTermsAgree(?array termsAgree): void |
+| `termsAgreeIp` | `?array` | Optional | - | getTermsAgreeIp(): ?array | setTermsAgreeIp(?array termsAgreeIp): void |
+| `title` | `?array` | Optional | - | getTitle(): ?array | setTitle(?array title): void |
+| `id` | `?array` | Optional | - | getId(): ?array | setId(?array id): void |
+| `accountType` | `?array` | Optional | - | getAccountType(): ?array | setAccountType(?array accountType): void |
+| `active` | `?array` | Optional | - | getActive(): ?array | setActive(?array active): void |
+| `cauSummaryStatusId` | `?array` | Optional | - | getCauSummaryStatusId(): ?array | setCauSummaryStatusId(?array cauSummaryStatusId): void |
+| `createdTs` | `?array` | Optional | - | getCreatedTs(): ?array | setCreatedTs(?array createdTs): void |
+| `eSerialNumber` | `?array` | Optional | - | getESerialNumber(): ?array | setESerialNumber(?array eSerialNumber): void |
+| `eTrackData` | `?array` | Optional | - | getETrackData(): ?array | setETrackData(?array eTrackData): void |
+| `eFormat` | `?array` | Optional | - | getEFormat(): ?array | setEFormat(?array eFormat): void |
+| `eKeyedData` | `?array` | Optional | - | getEKeyedData(): ?array | setEKeyedData(?array eKeyedData): void |
+| `expiringInMonths` | `?array` | Optional | - | getExpiringInMonths(): ?array | setExpiringInMonths(?array expiringInMonths): void |
+| `firstSix` | `?array` | Optional | - | getFirstSix(): ?array | setFirstSix(?array firstSix): void |
+| `hasRecurring` | `?array` | Optional | - | getHasRecurring(): ?array | setHasRecurring(?array hasRecurring): void |
+| `lastFour` | `?array` | Optional | - | getLastFour(): ?array | setLastFour(?array lastFour): void |
+| `modifiedTs` | `?array` | Optional | - | getModifiedTs(): ?array | setModifiedTs(?array modifiedTs): void |
+| `paymentMethod` | `?array` | Optional | - | getPaymentMethod(): ?array | setPaymentMethod(?array paymentMethod): void |
+| `ticket` | `?array` | Optional | - | getTicket(): ?array | setTicket(?array ticket): void |
+| `trackData` | `?array` | Optional | - | getTrackData(): ?array | setTrackData(?array trackData): void |
+| `location` | `?array` | Optional | - | getLocation(): ?array | setLocation(?array location): void |
+| `contact` | `?array` | Optional | - | getContact(): ?array | setContact(?array contact): void |
+| `transactions` | `?array` | Optional | - | getTransactions(): ?array | setTransactions(?array transactions): void |
+| `activeRecurrings` | `?array` | Optional | - | getActiveRecurrings(): ?array | setActiveRecurrings(?array activeRecurrings): void |
+| `isDeletable` | `?array` | Optional | - | getIsDeletable(): ?array | setIsDeletable(?array isDeletable): void |
+| `signature` | `?array` | Optional | - | getSignature(): ?array | setSignature(?array signature): void |
+| `createdUser` | `?array` | Optional | - | getCreatedUser(): ?array | setCreatedUser(?array createdUser): void |
+| `changelogs` | `?array` | Optional | - | getChangelogs(): ?array | setChangelogs(?array changelogs): void |
+| `accountVaultCauLogs` | `?array` | Optional | - | getAccountVaultCauLogs(): ?array | setAccountVaultCauLogs(?array accountVaultCauLogs): void |
+| `accountVaultCauProductTransactions` | `?array` | Optional | - | getAccountVaultCauProductTransactions(): ?array | setAccountVaultCauProductTransactions(?array accountVaultCauProductTransactions): void |
+
+## Example (as JSON)
+
+```json
+{
+  "account_holder_name": null,
+  "account_number": null,
+  "account_vault_api_id": null,
+  "accountvault_c1": null,
+  "accountvault_c2": null,
+  "accountvault_c3": null,
+  "ach_sec_code": null,
+  "billing_address": null,
+  "contact_id": null,
+  "customer_id": null,
+  "identity_verification": null,
+  "location_id": null,
+  "previous_account_vault_api_id": null,
+  "previous_account_vault_id": null,
+  "previous_transaction_id": null,
+  "terms_agree": null,
+  "terms_agree_ip": null,
+  "title": null,
+  "id": null,
+  "account_type": null,
+  "active": null,
+  "cau_summary_status_id": null,
+  "created_ts": null,
+  "e_serial_number": null,
+  "e_track_data": null,
+  "e_format": null,
+  "e_keyed_data": null,
+  "expiring_in_months": null,
+  "first_six": null,
+  "has_recurring": null,
+  "last_four": null,
+  "modified_ts": null,
+  "payment_method": null,
+  "ticket": null,
+  "track_data": null,
+  "location": null,
+  "contact": null,
+  "transactions": null,
+  "activeRecurrings": null,
+  "is_deletable": null,
+  "signature": null,
+  "created_user": null,
+  "changelogs": null,
+  "account_vault_cau_logs": null,
+  "account_vault_cau_product_transactions": null
+}
+```
+

@@ -1,0 +1,25 @@
+
+# Processor Enum
+
+Processor
+
+## Enumeration
+
+`ProcessorEnum`
+
+## Fields
+
+| Name |
+|  --- |
+| `ZGATE` |
+| `ZGATE2` |
+| `ZACH` |
+| `ACH` |
+| `FORTISACH` |
+
+## Example
+
+```
+zgate
+```
+
